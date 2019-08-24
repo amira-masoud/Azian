@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResetPW3ViewController" customModule="Azan" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="aBn-4u-vwe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qll-mi-CSs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JsY-a4-hFF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="590.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderView" translatesAutoresizingMaskIntoConstraints="NO" id="II3-YF-26C">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="250" id="Cl6-RO-4hF"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset your password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBh-7m-bVf">
+                                    <rect key="frame" x="100" y="290" width="175" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.28627450980000002" green="0.0039215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="SjK-qD-1vY">
+                                    <rect key="frame" x="30" y="360.5" width="325" height="125"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZG-iY-sjI" customClass="GrayBoarderView" customModule="Azan" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="   New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="52g-a6-jWh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="52g-a6-jWh" firstAttribute="leading" secondItem="KZG-iY-sjI" secondAttribute="leading" id="KqX-JO-gjc"/>
+                                                <constraint firstItem="52g-a6-jWh" firstAttribute="top" secondItem="KZG-iY-sjI" secondAttribute="top" id="bZd-XS-ZfL"/>
+                                                <constraint firstAttribute="bottom" secondItem="52g-a6-jWh" secondAttribute="bottom" id="tFY-gY-rrD"/>
+                                                <constraint firstAttribute="trailing" secondItem="52g-a6-jWh" secondAttribute="trailing" id="uyw-pK-nhV"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D7f-4T-li9" customClass="GrayBoarderView" customModule="Azan" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="75" width="325" height="50"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Confirm new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qxp-i2-ONG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Qxp-i2-ONG" firstAttribute="leading" secondItem="D7f-4T-li9" secondAttribute="leading" id="1cf-En-gxP"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qxp-i2-ONG" secondAttribute="trailing" id="SRa-cb-9OG"/>
+                                                <constraint firstItem="Qxp-i2-ONG" firstAttribute="top" secondItem="D7f-4T-li9" secondAttribute="top" id="TKz-8K-azs"/>
+                                                <constraint firstAttribute="bottom" secondItem="Qxp-i2-ONG" secondAttribute="bottom" id="dS3-TX-802"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="125" id="fmc-c7-dhj"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ere-jV-1xr" customClass="GrayBoarderButton" customModule="Azan" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="525.5" width="325" height="45"/>
+                                    <color key="backgroundColor" red="0.28627450980000002" green="0.0039215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="qni-0E-HyI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Reset password">
+                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="SjK-qD-1vY" firstAttribute="top" secondItem="OBh-7m-bVf" secondAttribute="bottom" constant="50" id="4AU-jX-ZZu"/>
+                                <constraint firstItem="II3-YF-26C" firstAttribute="top" secondItem="JsY-a4-hFF" secondAttribute="top" id="4Cc-Ed-7m2"/>
+                                <constraint firstItem="II3-YF-26C" firstAttribute="leading" secondItem="JsY-a4-hFF" secondAttribute="leading" id="8LI-8G-IAp"/>
+                                <constraint firstAttribute="bottom" secondItem="ere-jV-1xr" secondAttribute="bottom" constant="20" id="Jtq-Rp-jGi"/>
+                                <constraint firstItem="ere-jV-1xr" firstAttribute="leading" secondItem="JsY-a4-hFF" secondAttribute="leading" constant="30" id="Wam-uH-TIj"/>
+                                <constraint firstAttribute="trailing" secondItem="II3-YF-26C" secondAttribute="trailing" id="XNO-MO-08h"/>
+                                <constraint firstItem="SjK-qD-1vY" firstAttribute="leading" secondItem="JsY-a4-hFF" secondAttribute="leading" constant="30" id="gAP-Dd-nDY"/>
+                                <constraint firstAttribute="trailing" secondItem="ere-jV-1xr" secondAttribute="trailing" constant="20" id="hne-k2-l7K"/>
+                                <constraint firstItem="OBh-7m-bVf" firstAttribute="leading" secondItem="JsY-a4-hFF" secondAttribute="leading" constant="100" id="jTl-en-Ctp"/>
+                                <constraint firstItem="OBh-7m-bVf" firstAttribute="top" secondItem="II3-YF-26C" secondAttribute="bottom" constant="40" id="ll5-cz-Lng"/>
+                                <constraint firstAttribute="trailing" secondItem="OBh-7m-bVf" secondAttribute="trailing" constant="100" id="ngN-Mm-I9h"/>
+                                <constraint firstAttribute="trailing" secondItem="SjK-qD-1vY" secondAttribute="trailing" constant="20" id="pYr-Gt-bS9"/>
+                                <constraint firstItem="ere-jV-1xr" firstAttribute="top" secondItem="SjK-qD-1vY" secondAttribute="bottom" constant="40" id="wpD-9J-5n1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="JsY-a4-hFF" firstAttribute="leading" secondItem="Qll-mi-CSs" secondAttribute="leading" id="1xB-wF-lUl"/>
+                        <constraint firstAttribute="bottom" secondItem="JsY-a4-hFF" secondAttribute="bottom" id="BV9-oH-5Ck"/>
+                        <constraint firstItem="JsY-a4-hFF" firstAttribute="top" secondItem="Qll-mi-CSs" secondAttribute="top" id="KKT-Ma-ftl"/>
+                        <constraint firstAttribute="trailing" secondItem="JsY-a4-hFF" secondAttribute="trailing" id="gbM-80-TcT"/>
+                        <constraint firstItem="JsY-a4-hFF" firstAttribute="width" secondItem="Qll-mi-CSs" secondAttribute="width" id="psO-eF-ldd"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qll-mi-CSs" firstAttribute="bottom" secondItem="aBn-4u-vwe" secondAttribute="bottom" id="C76-Hg-8N2"/>
+                <constraint firstItem="Qll-mi-CSs" firstAttribute="trailing" secondItem="xgn-wz-Z9H" secondAttribute="trailing" id="KPT-cv-uCa"/>
+                <constraint firstItem="Qll-mi-CSs" firstAttribute="top" secondItem="aBn-4u-vwe" secondAttribute="top" id="dLr-Tf-OGC"/>
+                <constraint firstItem="Qll-mi-CSs" firstAttribute="leading" secondItem="xgn-wz-Z9H" secondAttribute="leading" id="xvh-op-loY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="xgn-wz-Z9H"/>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HeaderView" width="957.5" height="727"/>
+    </resources>
+</document>
